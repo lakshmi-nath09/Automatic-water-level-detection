@@ -5,30 +5,43 @@
 This project demonstrates an **Automatic Water Level Detection System** using Arduino.
 It reads analog values from a sensor (or simulated input) and indicates the water level using LEDs.
 
-This implementation is tested in a **simulation environment**, without physical hardware.
+This project is implemented and tested in a **simulation environment** (no physical hardware used).
 
 ---
 
 ## 🎯 Objective
 
-* To detect different water levels in a tank
-* To display the level using LEDs
-* To understand analog input processing in Arduino
+* To detect water levels in a tank automatically
+* To indicate levels using LEDs
+* To understand analog input and embedded systems
 
 ---
 
 ## ⚙️ Working Principle
 
-* The sensor (connected to analog pin A0) gives different voltage values based on water level.
-* Arduino reads this using `analogRead()`.
-* Based on predefined ranges, LEDs are turned ON.
+* Sensor connected to **Analog Pin A0**
+* Arduino reads values using `analogRead()`
+* Based on value range, LEDs turn ON
 
 ### 📊 Water Level Conditions:
 
-* **100 – 600** → Low Level → LED on Pin 2 ON
-* **601 – 625** → Medium Level → LED on Pin 3 ON
-* **626 – 700** → High Level → LED on Pins 4 & 5 ON
+* **100 – 600** → Low Level → LED (Pin 2) ON
+* **601 – 625** → Medium Level → LED (Pin 3) ON
+* **626 – 700** → High Level → LEDs (Pin 4 & 5) ON
 * **Else** → All LEDs OFF
+
+---
+
+## 🖼️ Project Output
+
+![Output](<img width="369" height="676" alt="demopic" src="https://github.com/user-attachments/assets/d864730d-dc3f-4d16-8eab-7b2407066cd1" />)
+
+---
+
+## 🎥 Project Demo
+
+[Click here to watch the demo video](https://docs.google.com/videos/d/1C3dW3uIq1UYu51VXg2gUJLqADjaHxUqRGvpYfTXghUU/edit?scene=id.p#scene=id.p)
+
 
 ---
 
@@ -44,10 +57,10 @@ This implementation is tested in a **simulation environment**, without physical 
 
 ## 💻 Code Explanation
 
-* `analogRead(A0)` reads sensor value (0–1023)
-* `if-else` conditions decide which LED to turn ON
-* `digitalWrite()` controls LED states
-* Serial Monitor displays real-time sensor values
+* `analogRead(A0)` reads sensor values (0–1023)
+* `if-else` conditions check water levels
+* `digitalWrite()` controls LEDs
+* Serial Monitor prints values for debugging
 
 ---
 
@@ -56,14 +69,14 @@ This implementation is tested in a **simulation environment**, without physical 
 * Analog Input
 * Digital Output
 * Conditional Statements
-* Embedded Systems Basics
+* Embedded Systems
 
 ---
 
 ## 🖥️ Simulation Note
 
-This project is implemented and tested in a simulation environment.
-It can be easily extended to real hardware with the same logic.
+This project is developed and tested in simulation.
+The same logic can be directly implemented in real hardware.
 
 ---
 
@@ -71,26 +84,28 @@ It can be easily extended to real hardware with the same logic.
 
 * Water tank level monitoring
 * Smart irrigation systems
-* Industrial liquid level detection
-* Home automation systems
+* Industrial liquid monitoring
+* Home automation
 
 ---
 
 ## 🔮 Future Enhancements
 
 * Automatic motor ON/OFF using relay
-* Buzzer alert for overflow
-* IoT integration (monitor via mobile app)
+* Buzzer alert system
+* IoT-based monitoring (mobile app)
 
 ---
 
 ## 📁 Project Files
 
 * `sensor_project.ino` → Arduino code
-* `README.md` → Project documentation
+* `README.md` → Documentation
+* `demopic.png` → Output image
+* `waterleveldetection.mp4` → Project demo video
 
 ---
 
 ## 👩‍💻 Author
 
-Lakshmi Nath
+Lakshmi Devi
